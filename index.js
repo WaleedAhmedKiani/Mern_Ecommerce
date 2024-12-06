@@ -1,12 +1,8 @@
 import express from "express"
-
-
 import jwt from "jsonwebtoken";
 import multer from "multer";
 import path from "path";
-import "dotenv/config";
 import cors from "cors";
-import connectDB from "./config/mongodb.js";
 import mongoose from "mongoose";
 const port = process.env.PORT || 4000;
 
@@ -15,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-connectDB();
+mongoose.connect("mongodb+srv://waleedahmedkiani415:2103128@cluster0.084il.mongodb.net/e-commerce");
 
 // paste your mongoDB Connection string above with password
 // password should not contain '@' special character

@@ -1,8 +1,9 @@
 {
   "name": "e-commerce-backend",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
+  "type": "module",
+  
   
   "scripts": {
     "server": "nodemon index.js"
